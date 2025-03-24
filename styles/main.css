@@ -1,0 +1,23 @@
+/* Error: Missing argument $hasActiveEffectOnMobile.
+ *    ,--> styles\_globals.scss
+ * 72 |     @include hover {
+ *    |     ^^^^^^^^^^^^^^ invocation
+ *    '
+ *    ,--> styles\helpers\_media.scss
+ * 55 | @mixin hover ($hasActiveEffectOnMobile) {
+ *    |        ================================ declaration
+ *    '
+ *   styles\_globals.scss 72:5  hover()
+ *   styles\_globals.scss 72:5  @use
+ *   styles\main.scss 5:1       root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Missing argument $hasActiveEffectOnMobile.\a    \250c \2500 \2500 > styles\\_globals.scss\a 72 \2502      @include hover {\d\a    \2502      ^^^^^^^^^^^^^^ invocation\a    \2575 \a    \250c \2500 \2500 > styles\\helpers\\_media.scss\a 55 \2502  @mixin hover ($hasActiveEffectOnMobile) {\d\a    \2502         \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a    \2575 \a   styles\\_globals.scss 72:5  hover()\a   styles\\_globals.scss 72:5  @use\a   styles\\main.scss 5:1       root stylesheet";
+}
