@@ -1,5 +1,11 @@
 @use 'helpers' as *;
 
+html {
+    &.is-lock {
+        overflow: hidden;
+    }
+}
+
 body {
     @include fluid-text(18,14);
 
@@ -83,4 +89,16 @@ a {
     transition-duration: 0s !important;
 }
 
+}
+a, button {
+    &[aria-label] {
+        position: relative;
+        
+        &::before {
+            @include abs-center;
+            @include square(rem(44));
+            content: '';
+        }
+        /* увеличиваем кликабельную область*/
+    }
 }

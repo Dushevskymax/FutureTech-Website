@@ -16,6 +16,7 @@ $mobile-s : 480.98;
         @content;
     }
 }
+
 @mixin tablet-above {
     @media (width > rem($tablet)) {
         @content;
@@ -52,12 +53,13 @@ $mobile-s : 480.98;
     }
 }
 
-@mixin hover ($hasActiveEffectOnMobile) {
+@mixin hover ($hasActiveEffectOnMobile:true) {
     @media (any-hover: hover) {
         &:hover {
             @content;
         }
     }
+    
     @if ($hasActiveEffectOnMobile) {
         @media (any-hover: none) {
             &:active {
