@@ -1,4 +1,4 @@
-@use '../helpers/' as *;
+@use '../helpers' as *;
 
 .icon {
     display: inline-flex;
@@ -17,7 +17,7 @@
         background-repeat: no-repeat;
 
         @include laptop {
-            --size: #{rem(20)}
+            --size: #{rem(20)};
         }
     }
 
