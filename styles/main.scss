@@ -12,4 +12,12 @@
 @use './blocks/badge';
 @use './blocks/soc1als';
 @use './blocks/footer';
+@use './blocks/advantage_card';
+@use './blocks/explore';
+@use './blocks/metrics';
+@use './blocks/resources_preview';
+@use './blocks/team';
 
+.header, .footer {
+    display: none !important;
+}
